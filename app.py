@@ -14,6 +14,11 @@ with app.app_context():
     db.create_all()
 
 #Rutas
+
+@app.route('/', methods=['GET'])
+def health_check():
+    return jsonify({'status': 'Server is running'}), 200
+
 @app.route('/getTasks', methods=['GET'])
 def get_all_tasks():
     # Consulta todas las tareas en la base de datos
@@ -69,7 +74,6 @@ def update_task(task_id):
     # Guarda los cambios en la base de datos
     db.session.commit()
 
-    return jsonify({'message': 'Tarea actualizada exitosamente'})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
