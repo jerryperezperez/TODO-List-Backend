@@ -12,12 +12,11 @@
 
 ## 🎯 What I Built
 
-A **production-ready REST API** that handles 1000+ daily requests with:
+A **production-ready REST API** with:
 
 | Feature | Technology | Status |
 |---------|------------|--------|
 | 🔥 **Fast API Responses** | Flask + SQLAlchemy | ✅ Live |
-| 🗄️ **Database Management** | PostgreSQL + ORM | ✅ Live |
 | 🌐 **Cross-Origin Support** | Flask-CORS | ✅ Live |
 | 🐳 **Containerized Deploy** | Docker + Railway | ✅ Live |
 | 📊 **Real-time CRUD** | RESTful endpoints | ✅ Live |
@@ -32,16 +31,27 @@ python app.py
 # → API running at localhost:5000
 ```
 
+
+## ⚡ Quick Start with Docker
+
+```bash
+git clone https://github.com/yourusername/todo-api.git
+# Building the image
+docker build -t todo_list_backend .
+# Running the container
+docker run -p 5000:5000 --name todo_list_backend_dev todo_list_backend
+# → API running at localhost:5000
+```
+
 ## 🏗️ Technical Architecture
 
 ```
 Production Stack:
 ├── Flask 3.0          → Web framework
 ├── SQLAlchemy         → Database ORM  
-├── PostgreSQL         → Production DB
-├── Gunicorn          → WSGI server
-├── Docker            → Containerization
-└── Railway/Heroku    → Cloud deployment
+├── Gunicorn           → WSGI server
+├── Docker             → Containerization
+└── Railway            → Cloud deployment
 ```
 
 ## 💼 Business Impact
@@ -75,12 +85,13 @@ GET    /health        # API status
 
 ## 🔗 Full-Stack Project
 
-This API powers my **[Angular Frontend](https://github.com/yourusername/todo-frontend)** - showcasing complete full-stack development capabilities.
+This API powers my **[Angular Frontend](https://github.com/jerryperezperez/TODO-List-Frontend)** - showcasing complete full-stack development capabilities.
+
 
 **See it in action:** [Live Todo App](https://your-frontend-url.com)
 
 ---
 
-**Built by [Your Name]** | 📧 your.email@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/yourprofile) | 🐙 [More Projects](https://github.com/yourusername)
+**Built by [Gerardo Arturo Pérez Pérez]** | 📧 jerryperezperez@hotmail.com | 💼 [LinkedIn](https://www.linkedin.com/in/gerardo-arturo-p%C3%A9rez-p%C3%A9rez-59803524b/)
 
 > 💡 *Available for backend developer opportunities*
